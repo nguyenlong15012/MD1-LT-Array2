@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="ts">
+<script>
+    // Bài 4: Viết một chương trình để đếm số từ trong một chuỗi
+    // let a = document.getElementById('ts').value;
+    let a = prompt();
+    // a.split();
+    let count = 0;
+
+    for (let i = 0; i < a.length-1; i++) {
+        if (a[i] === ' ' && a[i + 1] !== ' ') {
+            count++;
+        }
+    }
+    if (a[0] !== ' ') {
+        count++
+    }
+    alert('Có ' + count + ' từ.');
+
+</script>
+</body>
+</html>

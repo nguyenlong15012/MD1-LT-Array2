@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.-->
+<script>
+  let a = prompt('Nhâp câu bạn muốn! ');
+  let b = prompt('Nhập câu thứ 2 bạn muốn! ');
+
+  let count = 0;
+  let i;
+  if (a.length === b.length){
+      for (i=0; i<a.length; i++){
+          if(a[i] === b[i]){
+              count++;
+              console.log(count);
+          }
+      }
+      console.log(a.length)
+      if (count == a.length){
+          document.write('Hai chuỗi giống nhau');
+      }else {
+          document.write('Hai chuỗi khác nhau nhau')
+      }
+  }else {
+      document.write('Hai chuỗi khác nhau nhau')
+  }
+</script>
+</body>
+</html>
